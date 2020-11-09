@@ -4,7 +4,7 @@
  * @wordpress-plugin
  * Plugin Name:       Kntnt Remove Personal Option
  * Plugin URI:        https://www.kntnt.com/
- * Description:       Removes the section about with personal options from user profiles.
+ * Description:       Removes the section with personal options from user profiles.
  * Version:           1.0.0
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.com/
