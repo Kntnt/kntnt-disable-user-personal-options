@@ -13,6 +13,9 @@
  */
 
 
+namespace Kntnt\Remove_User_Personal_Options;
+
+
 defined( 'ABSPATH' ) && new Plugin;
 
 
