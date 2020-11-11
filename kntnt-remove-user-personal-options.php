@@ -5,7 +5,7 @@
  * Plugin Name:       Kntnt Remove Personal Option
  * Plugin URI:        https://www.kntnt.com/
  * Description:       Removes the section with personal options from user profiles, and resets personal options on save.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.com/
  * License:           GPL-3.0+
@@ -34,7 +34,9 @@ class Plugin {
     ];
 
     public function __construct() {
-        add_action( 'plugins_loaded', [ $this, 'run' ] );
+        if ( is_admin() ) {
+            add_action( 'plugins_loaded', [ $this, 'run' ] );
+        }
     }
 
     public function run() {
@@ -55,7 +57,7 @@ class Plugin {
         add_filter( 'sanitize_user_meta_admin_color', [ $this, 'user_meta' ], 10, 2 );
         add_filter( 'sanitize_user_meta_use_ssl', [ $this, 'user_meta' ], 10, 2 );
         add_filter( 'sanitize_user_meta_locale', [ $this, 'user_meta' ], 10, 2 );
-        
+
         add_filter( 'sanitize_user_meta_show_admin_bar_front', [ $this, 'user_meta_show_admin_bar_front' ], 10, 2 );
 
     }
