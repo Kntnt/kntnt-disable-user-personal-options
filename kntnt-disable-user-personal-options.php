@@ -2,7 +2,7 @@
 
 /**
  * @wordpress-plugin
- * Plugin Name:       Kntnt Disable User Profile's Personal Option
+ * Plugin Name:       Kntnt Disable User's Personal Option
  * Plugin URI:        https://www.kntnt.com/
  * Description:       Disables the section with personal options from user profiles, and resets personal options on save.
  * Version:           1.1.2
